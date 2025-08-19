@@ -26,7 +26,7 @@ export default function MidBanner() {
   }
 
   return (
-    <section className="w-full mt-16 mb-24">
+    <section className="hidden md:block w-full mt-16 mb-24">
       <div className="relative w-full h-auto">
         <Image
           src={bannerData.image}

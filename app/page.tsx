@@ -116,6 +116,8 @@ export default function Home() {
         </div>
       </section>
 
+      <PrincipalHome/>
+
       {/* What Do We Offer Section */}
       <section className="w-full bg-black py-16 md:py-20 lg:py-24">
         <div className="container mx-auto px-4 md:px-8 lg:px-12">
@@ -214,7 +216,38 @@ export default function Home() {
       {/* Facilities Section */}
       <Facilities />
 
-      <PrincipalHome />
+      {/* Enrol Your Child Section */}
+      <section className="w-full bg-black py-16 md:py-20 lg:py-24">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12">
+            {/* Left Column - Content */}
+            <div className="flex-1 space-y-6">
+              <div className="space-y-2">
+                <p className="text-gray-400 text-sm md:text-base font-medium tracking-wider uppercase">
+                  BRANCH ADMISSIONS
+                </p>
+                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-robuck leading-tight">
+                  Enroll your child
+                </h2>
+              </div>
+              
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl">
+                Are you searching for the best education Sri Lanka has to offer for your child? Look no further than Lyceum International School. Contact us today to submit your admission request, and our student service agents will guide you through the enrolment process.
+              </p>
+            </div>
+            
+            {/* Right Column - CTA Button */}
+            <div className="flex-shrink-0">
+              <button className="bg-[#2d2d2d] text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center gap-3 text-md whitespace-nowrap">
+                Apply Now
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

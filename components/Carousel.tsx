@@ -139,7 +139,7 @@ export default function Carousel({ items, autoplayInterval = 4000 }: CarouselPro
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             
             {/* Content */}
-            <div className="absolute top-0 left-0 right-0 p-8 md:p-16 text-white">
+            <div className="absolute top-20 left-0 right-0 p-8 md:p-16 text-white">
               <div className="max-w-4xl mx-auto flex flex-col items-center">
                 <p className="text-xl md:text-2xl mb-8 max-w-3xl text-center opacity-90">
                   {item.description}

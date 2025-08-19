@@ -58,7 +58,7 @@ export default function Facilities() {
     <section className="w-full py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="flex justify-between items-center mb-12 mx-12">
+        <div className="flex justify-between items-center mb-12 mx-2 md:mx-12">
           <div>
             <p className="text-gray-600 text-sm font-medium mb-2 uppercase tracking-wider">
               {facilitiesData.subtitle}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Inter Lyceum Art Exhibition and the Award Ceremony 2025",
+    "date": "August 4, 2025",
+    "readTime": "3 min read",
+    "category": ["Events", "Exhibitions", "News"],
+    "author": "Lyceum Editorial",
+    "image": "/jsons/carousel/h1.jpg",
+    "excerpt": "Celebrating artistic talents across all Lyceum branches in our annual art exhibition and awards ceremony.",
+    "content": "The Inter Lyceum Art Exhibition and Award Ceremony 2025 showcased the incredible artistic talents of students across all Lyceum International School branches..."
+  },
+  {
+    "id": 2,
+    "title": "Celebrating Founder's Day: A Tribute to Lyceum's Humble Beginnings and Lifelong Service",
+    "date": "July 30, 2025",
+    "readTime": "3 min read",
+    "category": ["Celebrations", "Events", "News"],
+    "author": "Lyceum Editorial",
+    "image": "/jsons/carousel/h2.jpg",
+    "excerpt": "Honoring the vision and dedication that built the Lyceum International School network.",
+    "content": "On this special Founder's Day, we celebrate the humble beginnings of Lyceum International School and the lifelong service of our founders..."
+  },
+  {
+    "id": 3,
+    "title": "Celebrating Excellence: Mr. Madhura Loku Kaluge Named Pearson Edexcel Innovator of the Year – Asia",
+    "date": "June 26, 2025",
+    "readTime": "2 min read",
+    "category": ["Celebrations", "Events", "News"],
+    "author": "Lyceum Editorial",
+    "image": "/jsons/carousel/h3.jpg",
+    "excerpt": "Recognizing outstanding innovation in education and commitment to student excellence.",
+    "content": "We are proud to announce that Mr. Madhura Loku Kaluge has been honored with the prestigious Pearson Edexcel Innovator of the Year award for Asia..."
+  },
+  {
+    "id": 4,
+    "title": "Student Innovation Fair 2025: Showcasing Future Leaders",
+    "date": "June 15, 2025",
+    "readTime": "4 min read",
+    "category": ["Events", "Innovation", "News"],
+    "author": "Lyceum Editorial",
+    "image": "/jsons/carousel/h4.jpg",
+    "excerpt": "Students present groundbreaking projects in science, technology, and sustainable development.",
+    "content": "The annual Student Innovation Fair brought together the brightest minds from across our campuses to showcase their innovative projects..."
+  },
+  {
+    "id": 5,
+    "title": "International Cultural Day: Celebrating Diversity and Unity",
+    "date": "May 28, 2025",
+    "readTime": "3 min read",
+    "category": ["Events", "Cultural", "News"],
+    "author": "Lyceum Editorial",
+    "image": "/jsons/carousel/h5.jpg",
+    "excerpt": "A vibrant celebration of the diverse cultures represented in our school community.",
+    "content": "Our International Cultural Day was a magnificent display of the rich cultural diversity that makes Lyceum International School truly global..."
+  },
+  {
+    "id": 6,
+    "title": "Academic Excellence Awards 2025: Recognizing Outstanding Achievement",
+    "date": "May 20, 2025",
+    "readTime": "3 min read",
+    "category": ["Celebrations", "Academic", "News"],
+    "author": "Lyceum Editorial",
+    "image": "/jsons/carousel/h1.jpg",
+    "excerpt": "Celebrating the academic achievements of our exceptional students across all programs.",
+    "content": "The Academic Excellence Awards ceremony honored students who have demonstrated exceptional performance in their studies..."
+  }
+]

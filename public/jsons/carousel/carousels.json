@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "/jsons/carousel/h1.jpg",
+    "title": "WELCOME TO OUR SCHOOL",
+    "description": "Empowering minds, building futures. Excellence in education since 1950."
+  },
+  {
+    "id": 2,
+    "image": "/jsons/carousel/h2.jpg",
+    "title": "Academic Excellence",
+    "description": "Comprehensive programs designed to nurture intellectual growth and critical thinking skills."
+  },
+  {
+    "id": 3,
+    "image": "/jsons/carousel/h3.jpg",
+    "title": "Modern Campus Life",
+    "description": "State-of-the-art facilities including labs, library, sports facilities, and comfortable accommodations."
+  },
+  {
+    "id": 4,
+    "image": "/jsons/carousel/h4.jpg",
+    "title": "Innovation & Research",
+    "description": "Fostering creativity and innovation through cutting-edge research and development programs."
+  },
+  {
+    "id": 5,
+    "image": "/jsons/carousel/h5.jpg",
+    "title": "Student Success",
+    "description": "A tradition of excellence with numerous awards and achievements in academics and extracurriculars."
+  }
+]

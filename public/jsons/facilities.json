@@ -1,0 +1,63 @@
+{
+  "title": "Our Facilities",
+  "subtitle": "WORLD-CLASS LEARNING ENVIRONMENT",
+  "description": "Discover our state-of-the-art facilities designed to enhance learning and development.",
+  "facilities": [
+    {
+      "id": 1,
+      "name": "Science Laboratory",
+      "image": "/jsons/carousel/h1.jpg",
+      "description": "Advanced science labs equipped with modern instruments and safety equipment.",
+      "size": "large"
+    },
+    {
+      "id": 2,
+      "name": "Library",
+      "image": "/jsons/carousel/h2.jpg",
+      "description": "Extensive collection of books and digital resources.",
+      "size": "medium"
+    },
+    {
+      "id": 3,
+      "name": "Sports Complex",
+      "image": "/jsons/carousel/h3.jpg",
+      "description": "Multi-purpose sports facilities for various activities.",
+      "size": "small"
+    },
+    {
+      "id": 4,
+      "name": "Computer Lab",
+      "image": "/jsons/carousel/h4.jpg",
+      "description": "High-tech computer laboratory with latest software.",
+      "size": "small"
+    },
+    {
+      "id": 5,
+      "name": "Sports Complex",
+      "image": "/jsons/carousel/h3.jpg",
+      "description": "Multi-purpose sports facilities for various activities.",
+      "size": "small"
+    },
+    {
+      "id": 6,
+      "name": "Computer Lab",
+      "image": "/jsons/carousel/h4.jpg",
+      "description": "High-tech computer laboratory with latest software.",
+      "size": "small"
+    },
+    {
+      "id": 7,
+      "name": "Art Studio",
+      "image": "/jsons/carousel/h5.jpg",
+      "description": "Creative space for artistic expression and projects.",
+      "size": "small"
+    },
+    {
+      "id": 8,
+      "name": "Auditorium",
+      "image": "/jsons/carousel/h1.jpg",
+      "description": "Modern auditorium for performances and presentations.",
+      "size": "small"
+    }
+  ]
+}

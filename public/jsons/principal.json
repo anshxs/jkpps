@@ -1,0 +1,41 @@
+{
+  "title": "Message from the Principal",
+  "subtitle": "LEADERSHIP & VISION",
+  "principal": {
+    "name": "Dr. Sarah Johnson",
+    "position": "Principal",
+    "image": "/jsons/carousel/h2.jpg",
+    "qualifications": "PhD in Education, M.Ed in Educational Leadership",
+    "experience": "15+ years in educational leadership",
+    "message": "Welcome to our prestigious institution where excellence meets opportunity. As Principal, I am committed to fostering an environment that nurtures intellectual curiosity, character development, and global citizenship. Our dedicated faculty and state-of-the-art facilities provide students with the tools they need to succeed in an ever-changing world. We believe in empowering each student to discover their unique potential and pursue their dreams with confidence. Together, we are building tomorrow's leaders, innovators, and compassionate citizens who will make a positive impact on society.",
+    "vision": "To create a learning community that inspires excellence, promotes innovation, and develops responsible global citizens.",
+    "achievements": [
+      "Awarded 'Educational Excellence Award' 2024",
+      "Led school to achieve 98% university acceptance rate",
+      "Implemented innovative STEM programs",
+      "Established international partnership programs"
+    ]
+  },
+  "statistics": [
+    {
+      "number": "25,000+",
+      "label": "Students Enrolled",
+      "icon": "users"
+    },
+    {
+      "number": "3,300+",
+      "label": "Qualified Teachers",
+      "icon": "academic-cap"
+    },
+    {
+      "number": "98%",
+      "label": "University Acceptance",
+      "icon": "chart-bar"
+    },
+    {
+      "number": "15+",
+      "label": "Years of Excellence",
+      "icon": "star"
+    }
+  ]
+}

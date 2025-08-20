@@ -5,10 +5,14 @@ import MidBanner from '@/components/MidBanner';
 import Facilities from '@/components/Facilities';
 import { User } from 'lucide-react';
 import PrincipalHome from '@/components/PrincipalHome';
+import { FloatingButtons } from '@/components/FloatingButtons';
 
 export default function Home() {
   return (
     <div className="w-full relative">
+      {/* Floating buttons for desktop devices */}
+      <FloatingButtons />
+      
       <Carousel items={carouselData} autoplayInterval={2000} />
       
       {/* Lyceum Network Section */}

@@ -9,9 +9,9 @@ function Page() {
         <Image
           width={600}
           height={100}
-          src="/grad.jpg"
+          src="/jsons/carousel/h1.jpg"
           alt="Description of image"
-          className="w-full h-50"
+          className="w-full h-50 object-cover"
         />
         <div className="absolute bottom-5 left-22 p-4 text-white text-[70px] font-bold">
           About JKPPS
@@ -198,7 +198,7 @@ function Page() {
               <Image
                 width={600}
                 height={400}
-                src="/grad.jpg"
+                src="/jsons/carousel/h3.jpg"
                 alt="Lyceum students in school uniform"
                 className="w-full h-96 object-cover rounded-lg"
               />

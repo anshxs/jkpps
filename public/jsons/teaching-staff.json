@@ -1,0 +1,397 @@
+{
+  "title": "Teaching Staff",
+  "members": [
+    {
+      "name": "Mr. Rajeev Sharma",
+      "designation": "Principal",
+      "subject": "Administration",
+      "qualification": "M.Com, B.Ed.",
+      "dateOfAppointment": "05-09-2022"
+    },
+    {
+      "name": "Mrs. Anju Sharma",
+      "designation": "Head Mistress",
+      "subject": "Administration",
+      "qualification": "BA, M.Ed, B.Sc, PGDCA",
+      "dateOfAppointment": "19.04.1999 / 16.10.2012"
+    },
+    {
+      "name": "Ms. Meetu Sharma",
+      "designation": "PGT (Computer)",
+      "subject": "Computer Science",
+      "qualification": "M.A (English), PGDCA, M.Sc IT, B.Ed.",
+      "dateOfAppointment": "08.10.2022"
+    },
+    {
+      "name": "Ms. Preeti Gupta",
+      "designation": "PGT (Maths)",
+      "subject": "Mathematics",
+      "qualification": "M.Sc (Maths), B.Ed.",
+      "dateOfAppointment": "04.08.2011"
+    },
+    {
+      "name": "Mrs Monika Sharma",
+      "designation": "PGT (Bio)",
+      "subject": "Biology",
+      "qualification": "M.Sc (Zoology), B.Ed.",
+      "dateOfAppointment": "01.08.2018"
+    },
+    {
+      "name": "Ms. Surbhi",
+      "designation": "PGT (Physics)",
+      "subject": "Physics",
+      "qualification": "M.Sc.(Physics), B.Ed.",
+      "dateOfAppointment": "08-04-2019"
+    },
+    {
+      "name": "Mr. Vipan Kumar",
+      "designation": "PGT (Maths)",
+      "subject": "Mathematics",
+      "qualification": "M.Sc(Maths), B.Ed.",
+      "dateOfAppointment": "08-09-2024"
+    },
+    {
+      "name": "Ms. Priya Wadhu",
+      "designation": "PGT (Psychology)",
+      "subject": "Psychology",
+      "qualification": "M.A (Psychology), B.Ed.",
+      "dateOfAppointment": "30.04.2022"
+    },
+    {
+      "name": "Ms. Shallu Manhotra",
+      "designation": "PGT (Commerce)",
+      "subject": "Banking & Commerce",
+      "qualification": "M.A, M.Ed.",
+      "dateOfAppointment": "30.04.2022"
+    },
+    {
+      "name": "Ms. Amita Kalsi",
+      "designation": "PGT (English)",
+      "subject": "English",
+      "qualification": "M.A (Eng.), B.Ed.",
+      "dateOfAppointment": "28-07-2022"
+    },
+    {
+      "name": "Ms. Swati",
+      "designation": "PGT (Geography)",
+      "subject": "Geography",
+      "qualification": "M.A, B.Ed.",
+      "dateOfAppointment": "28-07-2022"
+    },
+    {
+      "name": "Ms. Rinki Agarwal",
+      "designation": "PGT (Pol. Sc.)",
+      "subject": "Political Science",
+      "qualification": "M.A, NET.",
+      "dateOfAppointment": "28-07-2022"
+    },
+    {
+      "name": "Ms. Rasika Sharma",
+      "designation": "PGT (Chemistry)",
+      "subject": "Chemistry",
+      "qualification": "M.Sc, B.Ed.",
+      "dateOfAppointment": "13.04.2023"
+    },
+    {
+      "name": "Ms. Harpreet Kour",
+      "designation": "PGT (History)",
+      "subject": "History",
+      "qualification": "M.A, B.Ed.",
+      "dateOfAppointment": "13.04.2023"
+    },
+    {
+      "name": "Mr. Sachin Kumar",
+      "designation": "PGT (Economics)",
+      "subject": "Economics",
+      "qualification": "M.A, B.Ed.",
+      "dateOfAppointment": "06.09.2024"
+    },
+    {
+      "name": "Ms. Arti Choudhary",
+      "designation": "PGT PHE",
+      "subject": "Physical Education",
+      "qualification": "M.P.Ed.",
+      "dateOfAppointment": "05-08-2023"
+    },
+    {
+      "name": "Ms. Sonika Raina",
+      "designation": "Spoken English Teacher",
+      "subject": "English",
+      "qualification": "Spoken English Specialist",
+      "dateOfAppointment": "01-08-2023"
+    },
+    {
+      "name": "Mrs. Malti Adhikari",
+      "designation": "TGT (S.St)",
+      "subject": "Social Studies",
+      "qualification": "BA, M.Ed",
+      "dateOfAppointment": "03.04.2000"
+    },
+    {
+      "name": "Ms. Archana Dass",
+      "designation": "TGT (Economics)",
+      "subject": "Economics",
+      "qualification": "MA (Economics), M.Ed",
+      "dateOfAppointment": "15.09.2007"
+    },
+    {
+      "name": "Mrs. Bindu Mati",
+      "designation": "TGT (Hindi)",
+      "subject": "Hindi",
+      "qualification": "MA (Hindi), B.Ed",
+      "dateOfAppointment": "01.04.2009"
+    },
+    {
+      "name": "Mr. Ghanisham",
+      "designation": "TGT (Maths)",
+      "subject": "Mathematics",
+      "qualification": "B.Sc, B.Ed",
+      "dateOfAppointment": "02.11.2011"
+    },
+    {
+      "name": "Mrs. Vandana Kumari",
+      "designation": "TGT (S.St)",
+      "subject": "Social Studies",
+      "qualification": "M.Sc, B.Ed",
+      "dateOfAppointment": "04.10.2012"
+    },
+    {
+      "name": "Mrs. Anupama Suri",
+      "designation": "TGT (Science)",
+      "subject": "Science",
+      "qualification": "M.A(Eng.), M.Ed.",
+      "dateOfAppointment": "01-04-2014"
+    },
+    {
+      "name": "Mrs. Rekha Sharma",
+      "designation": "TGT (English)",
+      "subject": "English",
+      "qualification": "M.Com, MBA, B.Ed",
+      "dateOfAppointment": "18.04.2016"
+    },
+    {
+      "name": "Ms. Rashmi Sharma",
+      "designation": "TGT (English)",
+      "subject": "English",
+      "qualification": "M.A(English), B.Ed.",
+      "dateOfAppointment": "22.04.2019"
+    },
+    {
+      "name": "Ms. Jyoti Sharma",
+      "designation": "TGT (Hindi)",
+      "subject": "Hindi",
+      "qualification": "M.A, B.Ed., M.Ed.",
+      "dateOfAppointment": "28-07-2022"
+    },
+    {
+      "name": "Ms Gurvinder Kour",
+      "designation": "TGT (English)",
+      "subject": "English",
+      "qualification": "M.Sc, MA, M.Ed.",
+      "dateOfAppointment": "30-04-2022"
+    },
+    {
+      "name": "Mr. Gorav Kumar Dubey",
+      "designation": "TGT (Sports)",
+      "subject": "Sports",
+      "qualification": "B.P.E, B.P.Ed, M.P.Ed.",
+      "dateOfAppointment": "08.10.2022"
+    },
+    {
+      "name": "Ms. Priyanka",
+      "designation": "TGT (Science)",
+      "subject": "Science",
+      "qualification": "M.Sc, B.Ed.",
+      "dateOfAppointment": "30.12.2022"
+    },
+    {
+      "name": "Ms. Mandeep Kour",
+      "designation": "TGT (English)",
+      "subject": "English",
+      "qualification": "M.A, B.Ed.",
+      "dateOfAppointment": "28-07-2022"
+    },
+    {
+      "name": "Ms. Kirti",
+      "designation": "TGT (Science)",
+      "subject": "Science",
+      "qualification": "M.Sc. (Chemistry), B.Ed.",
+      "dateOfAppointment": "28-07-2022"
+    },
+    {
+      "name": "Mr. Mohinder Kumar",
+      "designation": "TGT (Maths)",
+      "subject": "Mathematics",
+      "qualification": "M.Sc, B.Ed.",
+      "dateOfAppointment": "01-08-2023"
+    },
+    {
+      "name": "Mrs. Nisha Jasrota",
+      "designation": "PRT (Dance)",
+      "subject": "Dance",
+      "qualification": "BA (Academic) MA (Dance)",
+      "dateOfAppointment": "03.01.2000"
+    },
+    {
+      "name": "Ms. Deepika Rajput",
+      "designation": "PRT (English)",
+      "subject": "English",
+      "qualification": "MA Sociology, B.Ed.",
+      "dateOfAppointment": "01.04.2011"
+    },
+    {
+      "name": "Ms. Neeraj Dhiman",
+      "designation": "PRT (Maths)",
+      "subject": "Mathematics",
+      "qualification": "M.Sc (Maths), B.Ed",
+      "dateOfAppointment": "05.04.2011"
+    },
+    {
+      "name": "Mrs. Jyoti Sharma",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "M.A (Sociology), B.Ed.",
+      "dateOfAppointment": "01.04.2012"
+    },
+    {
+      "name": "Ms. Anoopama Thussu",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "BA, M.Ed",
+      "dateOfAppointment": "03.04.2012"
+    },
+    {
+      "name": "Dr. Geeta Rani",
+      "designation": "PRT",
+      "subject": "Sanskrit",
+      "qualification": "MA(Sanskrit), M.Phil, PHD",
+      "dateOfAppointment": "10.04.2012"
+    },
+    {
+      "name": "Mrs Himani Bali",
+      "designation": "PRT (Computer)",
+      "subject": "Computer",
+      "qualification": "MCA",
+      "dateOfAppointment": "01.04.2014"
+    },
+    {
+      "name": "Mrs. Rupinder Kour",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "MA, B.Ed",
+      "dateOfAppointment": "18.04.2016"
+    },
+    {
+      "name": "Mr Gurdeep Kumar",
+      "designation": "PRT (Urdu)",
+      "subject": "Urdu",
+      "qualification": "MA (Urdu), B.Ed",
+      "dateOfAppointment": "08.05.2017"
+    },
+    {
+      "name": "Mr Gourav Kumar",
+      "designation": "PRT (Art & Craft)",
+      "subject": "Art & Craft",
+      "qualification": "B.F.A (Painting)",
+      "dateOfAppointment": "10.09.2018"
+    },
+    {
+      "name": "Mr. Ranjeev Kumar",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "B.A, B.Ed.",
+      "dateOfAppointment": "08.04.2019"
+    },
+    {
+      "name": "Ms. Anu Devi",
+      "designation": "PRT (Computer)",
+      "subject": "Computer",
+      "qualification": "M.C.A",
+      "dateOfAppointment": "31.07.2019"
+    },
+    {
+      "name": "Ms. Loveleen Kour",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "M.A(Sociology), B.Ed.",
+      "dateOfAppointment": "01.08.2019"
+    },
+    {
+      "name": "Ms. Dhanvir Kaur",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "M.A, B.Ed., M.Ed.",
+      "dateOfAppointment": "28.08.2019"
+    },
+    {
+      "name": "Ms. Kartika Sharma",
+      "designation": "PRT (Sports)",
+      "subject": "Sports",
+      "qualification": "M.A, B.P.Ed.",
+      "dateOfAppointment": "28.07.2022"
+    },
+    {
+      "name": "Ms. Manpreet Kour",
+      "designation": "PRT (English)",
+      "subject": "English",
+      "qualification": "M.A, B.Ed.",
+      "dateOfAppointment": "13.04.2023"
+    },
+    {
+      "name": "Ms. Rajni Devi",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "B.A, B.Ed, M.Ed.",
+      "dateOfAppointment": "13.04.2023"
+    },
+    {
+      "name": "Ms. Rashmi Sudan",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "B.Sc, M.Sc, B.Ed, M.Ed.",
+      "dateOfAppointment": "13.04.2023"
+    },
+    {
+      "name": "Ms. Sukirti Sharma",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "Graduate, B.Ed.",
+      "dateOfAppointment": "24.04.2023"
+    },
+    {
+      "name": "Ms Isha Saini",
+      "designation": "PRT",
+      "subject": "Primary Education",
+      "qualification": "B.Sc, M.Sc, B.Ed",
+      "dateOfAppointment": "05-09-2024"
+    },
+    {
+      "name": "Mrs. Rasmeet Kaur",
+      "designation": "N.T.T",
+      "subject": "Nursery Education",
+      "qualification": "B.Sc, M.A (Education), B.Ed",
+      "dateOfAppointment": "01.04.2014"
+    },
+    {
+      "name": "Mrs. Deepmala",
+      "designation": "N.T.T",
+      "subject": "Nursery Education",
+      "qualification": "BA, B.Ed, NTT",
+      "dateOfAppointment": "01.04.2014"
+    },
+    {
+      "name": "Ms. Shallu Devi",
+      "designation": "N.T.T",
+      "subject": "Nursery Education",
+      "qualification": "M.A, B.Ed.",
+      "dateOfAppointment": "01-08-2019"
+    },
+    {
+      "name": "Ms. Rajwinder Kour",
+      "designation": "N.T.T",
+      "subject": "Nursery Education",
+      "qualification": "12th & E.T.T",
+      "dateOfAppointment": "24.08.2022"
+    }
+  ]
+}

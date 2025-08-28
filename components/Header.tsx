@@ -51,7 +51,7 @@ const navigationData: NavigationItem[] = [
       },
       { title: "Teaching Staff", href: "/about/teaching-staff" },
       { title: "Non Teaching Staff", href: "/about/non-teaching-staff" },
-      { title: "Annual Report", href: "/about/annual-report" },
+      // { title: "Annual Report", href: "/about/annual-report" },
     ],
   },
   {
@@ -211,7 +211,7 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky h-30 top-0 z-50 w-full border-b bg-white flex items-center justify-center">
+    <header className="sticky h-30 top-0 z-50 w-full border-b bg-white flex items-center justify-center" style={{ marginTop: '4px' }}>
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Mobile Menu Button */}

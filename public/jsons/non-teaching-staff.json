@@ -1,0 +1,161 @@
+{
+  "title": "Non-Teaching Staff",
+  "members": [
+    {
+      "name": "Mr. Rahul Sharma",
+      "designation": "I/C S.O",
+      "qualification": "Graduate",
+      "dateOfAppointment": "21-02-2021"
+    },
+    {
+      "name": "Mr. Sonu Ram",
+      "designation": "Accountant",
+      "qualification": "M.COM.",
+      "dateOfAppointment": "01.08.2018"
+    },
+    {
+      "name": "Ms. Archana Pandita",
+      "designation": "LDC",
+      "qualification": "BCA, M.A, B.Ed",
+      "dateOfAppointment": "13.04.2023"
+    },
+    {
+      "name": "Ms. Shweta Koul",
+      "designation": "Accounts Clerk",
+      "qualification": "M.Com",
+      "dateOfAppointment": "26.04.2023"
+    },
+    {
+      "name": "Ms. Amandeep Kour",
+      "designation": "Accounts Clerk",
+      "qualification": "M.Com",
+      "dateOfAppointment": "05.06.2023"
+    },
+    {
+      "name": "Ms. Nishu Jangral",
+      "designation": "Counseller (PGT)",
+      "qualification": "M.A (Psychology)",
+      "dateOfAppointment": "30-04-2022"
+    },
+    {
+      "name": "Ms. Anchal Kumari",
+      "designation": "Asstt. Librarian",
+      "qualification": "B.Lib.",
+      "dateOfAppointment": "30-04-2022"
+    },
+    {
+      "name": "Mrs. Lovepreet Kour",
+      "designation": "Nurse",
+      "qualification": "12th FMPHQ GNM",
+      "dateOfAppointment": "01.11.2018"
+    },
+    {
+      "name": "Mrs. Bindu Kumari",
+      "designation": "Lab Asstt (Biology)",
+      "qualification": "B.Sc",
+      "dateOfAppointment": "07-04-2012"
+    },
+    {
+      "name": "Ms. Urvashi Sharma",
+      "designation": "Lab Asstt (Chem)",
+      "qualification": "B.Sc, PGDCA, MCA",
+      "dateOfAppointment": "28-07-2022"
+    },
+    {
+      "name": "Ms. Samta Bhagat",
+      "designation": "Lab. Asstt. (Physics)",
+      "qualification": "B.Sc, M.Sc",
+      "dateOfAppointment": "30-04-2022"
+    },
+    {
+      "name": "Mrs. Pushpa Devi",
+      "designation": "Helper",
+      "qualification": "8th",
+      "dateOfAppointment": "13.06.2005"
+    },
+    {
+      "name": "Mr. Des Kumar",
+      "designation": "Gardener",
+      "qualification": "8th",
+      "dateOfAppointment": "18.07.2005"
+    },
+    {
+      "name": "Ms. Babli Devi",
+      "designation": "Safai Karamchar (Adhoc)",
+      "qualification": "8th",
+      "dateOfAppointment": "14-09-2019"
+    },
+    {
+      "name": "Mr. Suresh Kumar",
+      "designation": "Safai Karamchari (Adhoc)",
+      "qualification": "8th",
+      "dateOfAppointment": "01-09-2019"
+    },
+    {
+      "name": "Mr. Sudesh Kumar",
+      "designation": "Bus Helper (Civ)",
+      "qualification": "8th",
+      "dateOfAppointment": "19.04.2012"
+    },
+    {
+      "name": "Mrs. Sushna Kumari",
+      "designation": "Safai Karamchari (Adhoc)",
+      "qualification": "8th",
+      "dateOfAppointment": "20.09.2016"
+    },
+    {
+      "name": "Mrs. Sharda Bharti",
+      "designation": "Safai Karamchari (Adhoc)",
+      "qualification": "6th",
+      "dateOfAppointment": "20.09.2016"
+    },
+    {
+      "name": "Mrs. Reeta Sharma",
+      "designation": "Safai Karamchari",
+      "qualification": "8th",
+      "dateOfAppointment": "21.09.2016"
+    },
+    {
+      "name": "Mrs. Anjali Kumari",
+      "designation": "Safai Karamchari (Adhoc)",
+      "qualification": "8th",
+      "dateOfAppointment": "18.08.2018"
+    },
+    {
+      "name": "Mrs. Raj Kumari",
+      "designation": "Safai Karamchari (Adhoc)",
+      "qualification": "8th",
+      "dateOfAppointment": "18.08.2018"
+    },
+    {
+      "name": "Mrs. Manjeet Kour",
+      "designation": "Safai Karamchari",
+      "qualification": "8th",
+      "dateOfAppointment": "18.08.2018"
+    },
+    {
+      "name": "Mr. Guldev Raj",
+      "designation": "Washerman (Adhoc)",
+      "qualification": "8th",
+      "dateOfAppointment": "18.08.2018"
+    },
+    {
+      "name": "Mr. Paramjit Singh",
+      "designation": "Gardener",
+      "qualification": "12th",
+      "dateOfAppointment": "03.06.2022"
+    },
+    {
+      "name": "Mrs. Seema Devi",
+      "designation": "Helper",
+      "qualification": "12th",
+      "dateOfAppointment": "12.08.2022"
+    },
+    {
+      "name": "Mrs. Sangeeta Sudan",
+      "designation": "Helper",
+      "qualification": "12th",
+      "dateOfAppointment": "14.06.1985"
+    }
+  ]
+}

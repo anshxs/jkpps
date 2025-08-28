@@ -29,6 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Top colorful border */}
+        <div 
+          className="fixed top-0 left-0 right-0 z-[60] h-1"
+          style={{
+            backgroundImage: 'linear-gradient(to right, #0400ff 0%, #0400ff 12.5%, #ef4444 12.5%, #ef4444 25%, #0400ff 25%, #0400ff 37.5%, #ef4444 37.5%, #ef4444 50%, #0400ff 50%, #0400ff 62.5%, #ef4444 62.5%, #ef4444 75%, #0400ff 75%, #0400ff 87.5%, #ef4444 87.5%, #ef4444 100%)',
+          }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />

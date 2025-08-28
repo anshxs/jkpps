@@ -18,25 +18,25 @@ export default function SecurityPage() {
       icon: CameraIcon,
       title: "CCTV Surveillance",
       description: "51 high-technology cameras monitoring all areas",
-      color: "bg-red-50 text-red-600"
+      color: "bg-red-100 text-red-600"
     },
     {
       icon: UserGroupIcon,
       title: "Security Guards",
       description: "Trained security personnel on campus",
-      color: "bg-blue-50 text-blue-600"
+      color: "bg-blue-100 text-blue-600"
     },
     {
       icon: HeartIcon,
       title: "Medical Dispensary",
       description: "On-campus first-aid and medical facility",
-      color: "bg-green-50 text-green-600"
+      color: "bg-green-100 text-green-600"
     },
     {
       icon: ShieldCheckIcon,
       title: "24/7 Protection",
       description: "Round-the-clock security monitoring",
-      color: "bg-purple-50 text-purple-600"
+      color: "bg-purple-100 text-purple-600"
     }
   ];
 
@@ -45,7 +45,7 @@ export default function SecurityPage() {
       title: "Advanced CCTV Network",
       description: "Our campus is equipped with 51 state-of-the-art surveillance cameras strategically positioned to monitor all areas including classrooms, corridors, playgrounds, and entry/exit points.",
       icon: CameraIcon,
-      image: "/carousel/h1.jpg",
+      image: "/jsons/carousel/h1.jpg",
       features: [
         "High-definition video recording",
         "Night vision capabilities", 
@@ -57,7 +57,7 @@ export default function SecurityPage() {
       title: "Medical Dispensary",
       description: "Our on-campus dispensary is fully equipped to handle first-aid situations and medical emergencies, ensuring immediate care for students and staff.",
       icon: HeartIcon,
-      image: "/carousel/h2.jpg",
+      image: "/jsons/carousel/h2.jpg",
       features: [
         "First-aid medical supplies",
         "Trained medical staff",
@@ -69,7 +69,7 @@ export default function SecurityPage() {
       title: "Security Personnel",
       description: "Professional security guards are stationed across the campus to ensure a safe and secure learning environment for all students and staff members.",
       icon: UserGroupIcon,
-      image: "/carousel/h3.jpg",
+      image: "/jsons/carousel/h3.jpg",
       features: [
         "Trained security guards",
         "Regular patrol schedules",
@@ -157,7 +157,7 @@ export default function SecurityPage() {
               const Icon = feature.icon;
               return (
                 <div key={index} className="group">
-                  <div className="bg-white rounded-2xl shadow-lg p-8 h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                  <div className="bg-secondary rounded-2xl p-8 h-full transition-all duration-300 border border-gray-100">
                     <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${feature.color} mb-6`}>
                       <Icon className="h-8 w-8" />
                     </div>
@@ -176,7 +176,7 @@ export default function SecurityPage() {
       </section>
 
       {/* Detailed Security Measures */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -195,7 +195,7 @@ export default function SecurityPage() {
               return (
                 <div key={index} className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}>
                   <div className="flex-1">
-                    <div className="bg-white rounded-2xl shadow-xl p-8">
+                    <div className="bg-white rounded-2xl p-8">
                       <div className="flex items-center mb-6">
                         <div className="bg-red-100 text-red-600 p-3 rounded-xl mr-4">
                           <Icon className="h-8 w-8" />
@@ -221,7 +221,7 @@ export default function SecurityPage() {
                   <div className="flex-1">
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl transform rotate-3"></div>
-                      <div className="relative bg-white p-2 rounded-2xl shadow-xl">
+                      <div className="relative bg-white p-1 rounded-2xl">
                         <Image
                           src={measure.image}
                           alt={measure.title}
@@ -256,7 +256,7 @@ export default function SecurityPage() {
               const Icon = protocol.icon;
               return (
                 <div key={index} className="group">
-                  <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-red-200">
+                  <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 h-full transition-all duration-300 border border-red-200">
                     <div className="bg-red-600 text-white inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6">
                       <Icon className="h-8 w-8" />
                     </div>
@@ -274,7 +274,7 @@ export default function SecurityPage() {
         </div>
       </section>
 
-      {/* Security Notice */}
+      {/* Security Notice
       <section className="py-16 bg-gradient-to-r from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -291,10 +291,10 @@ export default function SecurityPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Security */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-red-700 text-white">
+      {/* <section className="py-16 bg-gradient-to-r from-blue-800 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Security Concerns or Emergency?
@@ -311,7 +311,7 @@ export default function SecurityPage() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

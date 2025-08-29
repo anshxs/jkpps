@@ -1,0 +1,144 @@
+{
+  "galleryCategories": [
+    {
+      "id": 1,
+      "name": "School Events",
+      "description": "Annual functions, cultural programs and special celebrations",
+      "color": "blue"
+    },
+    {
+      "id": 2,
+      "name": "Sports & Activities",
+      "description": "Athletic competitions, sports day and outdoor activities",
+      "color": "green"
+    },
+    {
+      "id": 3,
+      "name": "Academic Activities",
+      "description": "Classroom activities, science exhibitions and academic competitions",
+      "color": "purple"
+    },
+    {
+      "id": 4,
+      "name": "Campus Life",
+      "description": "Daily school life, infrastructure and campus facilities",
+      "color": "orange"
+    },
+    {
+      "id": 5,
+      "name": "Achievements",
+      "description": "Awards ceremonies, recognitions and proud moments",
+      "color": "red"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "title": "Annual Day Celebration 2024",
+      "description": "Students performing cultural dance during the annual day celebration",
+      "src": "/jsons/carousel/h1.jpg",
+      "category": "School Events",
+      "date": "2024-03-15",
+      "photographer": "School Photography Club"
+    },
+    {
+      "id": 2,
+      "title": "Science Exhibition",
+      "description": "Students demonstrating their innovative science projects",
+      "src": "/jsons/carousel/h2.jpg",
+      "category": "Academic Activities",
+      "date": "2024-02-20",
+      "photographer": "Academic Department"
+    },
+    {
+      "id": 3,
+      "title": "Sports Day Championships",
+      "description": "Athletic competitions and team spirit on display",
+      "src": "/jsons/carousel/h3.jpg",
+      "category": "Sports & Activities",
+      "date": "2024-01-10",
+      "photographer": "Sports Department"
+    },
+    {
+      "id": 4,
+      "title": "Campus Infrastructure",
+      "description": "Modern classroom facilities and learning environment",
+      "src": "/jsons/carousel/h4.jpg",
+      "category": "Campus Life",
+      "date": "2024-04-05",
+      "photographer": "Administration"
+    },
+    {
+      "id": 5,
+      "title": "Award Ceremony",
+      "description": "Students receiving excellence awards for academic achievements",
+      "src": "/jsons/carousel/h5.jpg",
+      "category": "Achievements",
+      "date": "2024-03-25",
+      "photographer": "School Media Team"
+    },
+    {
+      "id": 6,
+      "title": "Cultural Program",
+      "description": "Traditional dance performance by senior students",
+      "src": "/jsons/carousel/h1.jpg",
+      "category": "School Events",
+      "date": "2024-02-14",
+      "photographer": "Cultural Committee"
+    },
+    {
+      "id": 7,
+      "title": "Mathematics Olympiad",
+      "description": "Students participating in national level mathematics competition",
+      "src": "/jsons/carousel/h2.jpg",
+      "category": "Academic Activities",
+      "date": "2024-01-25",
+      "photographer": "Mathematics Department"
+    },
+    {
+      "id": 8,
+      "title": "Football Tournament",
+      "description": "Inter-house football championship final match",
+      "src": "/jsons/carousel/h3.jpg",
+      "category": "Sports & Activities",
+      "date": "2024-03-08",
+      "photographer": "Sports Committee"
+    },
+    {
+      "id": 9,
+      "title": "Library Reading Session",
+      "description": "Students engaged in group study and reading activities",
+      "src": "/jsons/carousel/h4.jpg",
+      "category": "Campus Life",
+      "date": "2024-02-28",
+      "photographer": "Library Staff"
+    },
+    {
+      "id": 10,
+      "title": "Merit Certificate Distribution",
+      "description": "Top performers receiving certificates from the principal",
+      "src": "/jsons/carousel/h5.jpg",
+      "category": "Achievements",
+      "date": "2024-04-10",
+      "photographer": "School Administration"
+    },
+    {
+      "id": 11,
+      "title": "Independence Day Celebration",
+      "description": "Patriotic celebration with flag hoisting ceremony",
+      "src": "/jsons/carousel/h1.jpg",
+      "category": "School Events",
+      "date": "2024-08-15",
+      "photographer": "Event Management Team"
+    },
+    {
+      "id": 12,
+      "title": "Computer Lab Session",
+      "description": "Students learning programming and digital skills",
+      "src": "/jsons/carousel/h2.jpg",
+      "category": "Academic Activities",
+      "date": "2024-03-12",
+      "photographer": "IT Department"
+    }
+  ]
+}

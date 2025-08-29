@@ -1,0 +1,146 @@
+{
+  "admissionForms": [
+    {
+      "id": 1,
+      "title": "Admission Application Form",
+      "description": "Main admission form for all classes. Fill this form completely and submit with required documents.",
+      "fileName": "admission-application-form.pdf",
+      "filePath": "/forms/admission-application-form.pdf",
+      "fileSize": "245 KB",
+      "category": "Primary Forms",
+      "lastUpdated": "2024-08-15",
+      "isRequired": true,
+      "applicableFor": ["Nursery", "1st-12th"]
+    },
+    {
+      "id": 2,
+      "title": "Medical Certificate Form",
+      "description": "Medical fitness certificate to be filled by a registered medical practitioner.",
+      "fileName": "medical-certificate-form.pdf",
+      "filePath": "/forms/medical-certificate-form.pdf",
+      "fileSize": "180 KB",
+      "category": "Medical Forms",
+      "lastUpdated": "2024-07-20",
+      "isRequired": true,
+      "applicableFor": ["All Classes"]
+    },
+    {
+      "id": 3,
+      "title": "Character Certificate Form",
+      "description": "Character certificate from the previous school (for transfer students).",
+      "fileName": "character-certificate-form.pdf",
+      "filePath": "/forms/character-certificate-form.pdf",
+      "fileSize": "165 KB",
+      "category": "Transfer Forms",
+      "lastUpdated": "2024-08-10",
+      "isRequired": false,
+      "applicableFor": ["Transfer Students"]
+    },
+    {
+      "id": 4,
+      "title": "Fee Concession Application",
+      "description": "Application form for fee concession for police personnel and their families.",
+      "fileName": "fee-concession-application.pdf",
+      "filePath": "/forms/fee-concession-application.pdf",
+      "fileSize": "220 KB",
+      "category": "Concession Forms",
+      "lastUpdated": "2024-08-01",
+      "isRequired": false,
+      "applicableFor": ["Police Personnel Wards"]
+    },
+    {
+      "id": 5,
+      "title": "Transport Service Application",
+      "description": "Form to apply for school bus transportation service.",
+      "fileName": "transport-service-application.pdf",
+      "filePath": "/forms/transport-service-application.pdf",
+      "fileSize": "195 KB",
+      "category": "Additional Services",
+      "lastUpdated": "2024-07-25",
+      "isRequired": false,
+      "applicableFor": ["All Classes"]
+    },
+    {
+      "id": 6,
+      "title": "Hostel Accommodation Form",
+      "description": "Application form for hostel accommodation facility.",
+      "fileName": "hostel-accommodation-form.pdf",
+      "filePath": "/forms/hostel-accommodation-form.pdf",
+      "fileSize": "280 KB",
+      "category": "Accommodation",
+      "lastUpdated": "2024-08-05",
+      "isRequired": false,
+      "applicableFor": ["6th-12th"]
+    },
+    {
+      "id": 7,
+      "title": "Parent Information Form",
+      "description": "Detailed parent/guardian information and emergency contact details.",
+      "fileName": "parent-information-form.pdf",
+      "filePath": "/forms/parent-information-form.pdf",
+      "fileSize": "210 KB",
+      "category": "Primary Forms",
+      "lastUpdated": "2024-08-12",
+      "isRequired": true,
+      "applicableFor": ["All Classes"]
+    },
+    {
+      "id": 8,
+      "title": "Previous School Records Transfer",
+      "description": "Form for requesting transfer of academic records from previous school.",
+      "fileName": "school-records-transfer.pdf",
+      "filePath": "/forms/school-records-transfer.pdf",
+      "fileSize": "175 KB",
+      "category": "Transfer Forms",
+      "lastUpdated": "2024-07-30",
+      "isRequired": false,
+      "applicableFor": ["Transfer Students"]
+    }
+  ],
+  "categories": [
+    {
+      "name": "Primary Forms",
+      "description": "Essential forms required for all admissions",
+      "color": "blue",
+      "icon": "FileText"
+    },
+    {
+      "name": "Medical Forms",
+      "description": "Health and medical related documentation",
+      "color": "green",
+      "icon": "Heart"
+    },
+    {
+      "name": "Transfer Forms",
+      "description": "Forms specific to transfer students",
+      "color": "purple",
+      "icon": "ArrowRight"
+    },
+    {
+      "name": "Concession Forms",
+      "description": "Fee concession and scholarship applications",
+      "color": "orange",
+      "icon": "Award"
+    },
+    {
+      "name": "Additional Services",
+      "description": "Optional services and facilities",
+      "color": "cyan",
+      "icon": "Plus"
+    },
+    {
+      "name": "Accommodation",
+      "description": "Hostel and accommodation related forms",
+      "color": "indigo",
+      "icon": "Home"
+    }
+  ],
+  "instructions": [
+    "Download and print all required forms",
+    "Fill forms in black or blue ink only",
+    "Do not leave any mandatory fields blank",
+    "Attach all required documents as mentioned in the procedure",
+    "Submit completed forms at the school office during working hours",
+    "Keep photocopies of all submitted forms for your records"
+  ]
+}

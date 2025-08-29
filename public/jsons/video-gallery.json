@@ -1,0 +1,210 @@
+{
+  "videoCategories": [
+    {
+      "id": 1,
+      "name": "School Events",
+      "description": "Annual functions, cultural programs and special celebrations",
+      "color": "blue"
+    },
+    {
+      "id": 2,
+      "name": "Sports & Activities",
+      "description": "Athletic competitions, sports day and outdoor activities",
+      "color": "green"
+    },
+    {
+      "id": 3,
+      "name": "Academic Activities",
+      "description": "Classroom activities, science exhibitions and academic presentations",
+      "color": "purple"
+    },
+    {
+      "id": 4,
+      "name": "Campus Tour",
+      "description": "Virtual tours of school facilities and infrastructure",
+      "color": "orange"
+    },
+    {
+      "id": 5,
+      "name": "Achievements",
+      "description": "Award ceremonies, recognitions and success stories",
+      "color": "red"
+    },
+    {
+      "id": 6,
+      "name": "Announcements",
+      "description": "Principal messages, important announcements and updates",
+      "color": "indigo"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "Annual Day Celebration 2024 - Full Event",
+      "description": "Complete coverage of our annual day celebration featuring cultural performances, speeches, and award ceremonies",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h1.jpg",
+      "category": "School Events",
+      "duration": "45:30",
+      "date": "2024-03-15",
+      "views": "2.5K",
+      "uploader": "JKPPS Official"
+    },
+    {
+      "id": 2,
+      "title": "Science Exhibition 2024 - Student Projects",
+      "description": "Amazing science projects and innovations by our talented students",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h2.jpg",
+      "category": "Academic Activities",
+      "duration": "15:20",
+      "date": "2024-02-20",
+      "views": "1.8K",
+      "uploader": "Academic Department"
+    },
+    {
+      "id": 3,
+      "title": "Inter-House Sports Championship Final",
+      "description": "Exciting highlights from the final match of inter-house sports championship",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h3.jpg",
+      "category": "Sports & Activities",
+      "duration": "25:15",
+      "date": "2024-01-10",
+      "views": "3.2K",
+      "uploader": "Sports Department"
+    },
+    {
+      "id": 4,
+      "title": "Virtual Campus Tour - Facilities Overview",
+      "description": "Take a virtual tour of our modern campus facilities and infrastructure",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h4.jpg",
+      "category": "Campus Tour",
+      "duration": "12:45",
+      "date": "2024-04-05",
+      "views": "4.1K",
+      "uploader": "Administration"
+    },
+    {
+      "id": 5,
+      "title": "Excellence Awards Ceremony 2024",
+      "description": "Celebrating our top performers and their outstanding achievements",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h5.jpg",
+      "category": "Achievements",
+      "duration": "30:00",
+      "date": "2024-03-25",
+      "views": "1.9K",
+      "uploader": "School Media Team"
+    },
+    {
+      "id": 6,
+      "title": "Principal's Message - New Academic Session",
+      "description": "Important message from our principal regarding the new academic session and upcoming initiatives",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h1.jpg",
+      "category": "Announcements",
+      "duration": "8:30",
+      "date": "2024-04-01",
+      "views": "5.7K",
+      "uploader": "Administration"
+    },
+    {
+      "id": 7,
+      "title": "Cultural Dance Performance - Traditional Folk",
+      "description": "Beautiful traditional folk dance performance by our cultural club",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h2.jpg",
+      "category": "School Events",
+      "duration": "6:45",
+      "date": "2024-02-14",
+      "views": "2.1K",
+      "uploader": "Cultural Committee"
+    },
+    {
+      "id": 8,
+      "title": "Mathematics Olympiad Preparation Session",
+      "description": "Expert tips and strategies for mathematics olympiad preparation",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h3.jpg",
+      "category": "Academic Activities",
+      "duration": "22:30",
+      "date": "2024-01-25",
+      "views": "1.5K",
+      "uploader": "Mathematics Department"
+    },
+    {
+      "id": 9,
+      "title": "Football Team Training Highlights",
+      "description": "Training session highlights of our championship-winning football team",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h4.jpg",
+      "category": "Sports & Activities",
+      "duration": "18:20",
+      "date": "2024-03-08",
+      "views": "2.8K",
+      "uploader": "Sports Committee"
+    },
+    {
+      "id": 10,
+      "title": "Smart Classroom Technology Demo",
+      "description": "Demonstration of our state-of-the-art smart classroom technology and digital learning tools",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h5.jpg",
+      "category": "Campus Tour",
+      "duration": "10:15",
+      "date": "2024-02-28",
+      "views": "3.3K",
+      "uploader": "IT Department"
+    },
+    {
+      "id": 11,
+      "title": "Student Success Stories - Board Toppers",
+      "description": "Inspiring success stories and study tips from our board exam toppers",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h1.jpg",
+      "category": "Achievements",
+      "duration": "20:45",
+      "date": "2024-04-10",
+      "views": "4.2K",
+      "uploader": "Academic Counselor"
+    },
+    {
+      "id": 12,
+      "title": "Important Update - Examination Schedule",
+      "description": "Latest updates regarding examination schedules and important guidelines for students",
+      "type": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/jsons/carousel/h2.jpg",
+      "category": "Announcements",
+      "duration": "5:20",
+      "date": "2024-03-12",
+      "views": "6.1K",
+      "uploader": "Examination Board"
+    }
+  ]
+}

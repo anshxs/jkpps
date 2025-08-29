@@ -146,7 +146,7 @@ function Page() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative">
+      <div className="hidden md:block relative">
         <Image
           width={1200}
           height={400}
@@ -154,7 +154,7 @@ function Page() {
           alt="Video Gallery"
           className="w-full h-80 object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-red-900/80 to-purple-900/80 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-center text-white">
             <div className="flex items-center justify-center mb-4">
               <Youtube className="h-12 w-12 mr-4" />
@@ -174,7 +174,7 @@ function Page() {
           <div className="flex flex-wrap justify-center gap-4">
             <button
               onClick={() => setSelectedCategory("All")}
-              className={`px-6 py-3 rounded-full font-medium transition-all ${
+              className={`px-4 py-1 rounded-full font-medium text-md transition-all ${
                 selectedCategory === "All"
                   ? "bg-red-600 text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -190,7 +190,7 @@ function Page() {
                 <button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.name)}
-                  className={`px-6 py-3 rounded-full font-medium transition-all ${
+                  className={`px-4 py-1 rounded-full font-medium text-md transition-all ${
                     selectedCategory === category.name
                       ? `${colors.badge} ${colors.text} border-2 ${colors.border}`
                       : `bg-gray-100 text-gray-700 ${colors.hover} hover:border ${colors.border}`
@@ -225,7 +225,7 @@ function Page() {
           {filteredVideos.map((video) => (
             <div
               key={video.id}
-              className="group bg-white rounded-xl border border-gray-200 hover:border-red-300 transition-all duration-300 cursor-pointer overflow-hidden"
+              className="group bg-white rounded-xl border border-gray-200 transition-all duration-300 cursor-pointer overflow-hidden"
               onClick={() => openModal(video)}
             >
               {/* Video Thumbnail */}
@@ -240,8 +240,8 @@ function Page() {
                 
                 {/* Play Button Overlay */}
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Play className="h-8 w-8 text-white ml-1" fill="currentColor" />
+                  <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <Play className="h-4 w-4 text-black ml-1" fill="currentColor" />
                   </div>
                 </div>
                 
@@ -251,9 +251,9 @@ function Page() {
                 </div>
                 
                 {/* Video Type Badge */}
-                <div className="absolute top-2 left-2 bg-white/90 rounded-full p-1.5">
+                {/* <div className="absolute top-2 left-2 bg-white/90 rounded-full p-1.5">
                   {getVideoIcon(video.type)}
-                </div>
+                </div> */}
               </div>
               
               {/* Video Info */}

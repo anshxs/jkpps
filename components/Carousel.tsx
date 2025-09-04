@@ -53,8 +53,8 @@ export default function Carousel({ items, autoplayInterval = 4000 }: CarouselPro
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging) return;
     const currentX = e.clientX;
-    const diffX = startX - currentX;
-    setTranslateX(-diffX);
+    const diffX = currentX - startX;
+    setTranslateX(diffX);
   };
 
   const handleMouseUp = () => {
@@ -64,11 +64,11 @@ export default function Carousel({ items, autoplayInterval = 4000 }: CarouselPro
     const threshold = 50;
     if (Math.abs(translateX) > threshold) {
       if (translateX > 0) {
-        // Dragged left, go to next slide
-        setCurrentSlide((prev) => (prev + 1) % items.length);
-      } else {
         // Dragged right, go to previous slide
         setCurrentSlide((prev) => (prev - 1 + items.length) % items.length);
+      } else {
+        // Dragged left, go to next slide
+        setCurrentSlide((prev) => (prev + 1) % items.length);
       }
     }
     
@@ -85,8 +85,8 @@ export default function Carousel({ items, autoplayInterval = 4000 }: CarouselPro
   const handleTouchMove = (e: React.TouchEvent) => {
     if (!isDragging) return;
     const currentX = e.touches[0].clientX;
-    const diffX = startX - currentX;
-    setTranslateX(-diffX);
+    const diffX = currentX - startX;
+    setTranslateX(diffX);
   };
 
   const handleTouchEnd = () => {
@@ -96,9 +96,11 @@ export default function Carousel({ items, autoplayInterval = 4000 }: CarouselPro
     const threshold = 50;
     if (Math.abs(translateX) > threshold) {
       if (translateX > 0) {
-        setCurrentSlide((prev) => (prev + 1) % items.length);
-      } else {
+        // Dragged right, go to previous slide
         setCurrentSlide((prev) => (prev - 1 + items.length) % items.length);
+      } else {
+        // Dragged left, go to next slide
+        setCurrentSlide((prev) => (prev + 1) % items.length);
       }
     }
     
@@ -111,7 +113,7 @@ export default function Carousel({ items, autoplayInterval = 4000 }: CarouselPro
   }
 
   return (
-    <div className="relative w-full h-[85vh] md:h-[85vh] overflow-hidden cursor-grab active:cursor-grabbing">
+    <div className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden cursor-grab active:cursor-grabbing">
       {/* Carousel Images */}
       <div
         ref={carouselRef}
@@ -132,7 +134,7 @@ export default function Carousel({ items, autoplayInterval = 4000 }: CarouselPro
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-full object-cover select-none"
+              className="w-full h-full object-cover object-center select-none"
               draggable={false}
             />
             {/* Gradient Overlay */}
@@ -140,26 +142,19 @@ export default function Carousel({ items, autoplayInterval = 4000 }: CarouselPro
             <div className="absolute inset-0 bg-gradient-to-b from-red-500/40 via-transparent to-transparent" />
             
             {/* Content */}
-            <div className="absolute top-20 left-0 right-0 p-8 md:p-16 text-white">
-              <div className="max-w-4xl mx-auto flex flex-col items-center">
-                <p className="text-xl md:text-2xl mb-8 max-w-3xl text-center opacity-90">
+            <div className="absolute inset-0 p-4 sm:p-6 md:p-8 lg:p-16 text-white flex items-center justify-center">
+              <div className="max-w-4xl mx-auto text-center">
+                <p className="text-xl lg:text-2xl mb-4 sm:mb-6 md:mb-8 max-w-3xl opacity-90 px-4">
                   {item.description}
                 </p>
-                <h1 className="text-[40px] md:text-[100px] mb-4 font-robuck tracking-wide">
+                <h1 className="text-6xl lg:text-[80px] xl:text-[100px] mb-4 font-robuck tracking-wide leading-tight">
                   {item.title}
                 </h1>
-                
               </div>
             </div>
           </div>
         ))}
       </div>
-      
-      {/* Apply for Admissions Button - Floating at center bottom within carousel */}
-      <button className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 bg-white hover:bg-white text-black font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
-        <Plus strokeWidth={2.5}/>
-        Apply for Admissions
-      </button>
     </div>
   );
 }

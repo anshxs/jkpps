@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, Plus, ChevronDown, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Home } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,7 +13,18 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 import {
   Popover,
   PopoverContent,
@@ -74,7 +85,7 @@ const navigationData: NavigationItem[] = [
       { title: "Worksheets", href: "/academics/worksheets" },
       { title: "TC Details", href: "/academics/tc-details" },
     ],
-  }
+  },
 ];
 
 const rightNavigationData: NavigationItem[] = [
@@ -96,52 +107,80 @@ const rightNavigationData: NavigationItem[] = [
     ],
   },
   { title: "Awards", href: "/awards" },
-//   { title: "Pay Fees", href: "/pay-fees" },
-//   { title: "Contact Us", href: "/contact" },
+  //   { title: "Pay Fees", href: "/pay-fees" },
+  //   { title: "Contact Us", href: "/contact" },
 ];
 
-const MobileNavItem: React.FC<{ item: NavigationItem; level?: number }> = ({
-  item,
-  level = 0,
-}) => {
+const MobileNavItem: React.FC<{
+  item: NavigationItem;
+  level?: number;
+  onNavigate?: () => void;
+}> = ({ item, level = 0, onNavigate }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    if (onNavigate) onNavigate();
+  };
+
   return (
-    <div className={`${level > 0 ? "ml-4" : ""}`}>
-      <div className="flex items-center justify-between py-2">
-        {item.href ? (
-          <Link
-            href={item.href}
-            className="flex-1 text-left text-gray-700 hover:text-blue-600 transition-colors"
-          >
-            {item.title}
-          </Link>
-        ) : (
-          <span className="flex-1 text-gray-700">{item.title}</span>
-        )}
-        {item.children && (
+    <div className={cn("w-full", level > 0 && "ml-2")}>
+      {item.children ? (
+        <Collapsible open={isOpen} onOpenChange={setIsOpen}>
+          <CollapsibleTrigger asChild>
+            <Button
+              variant="ghost"
+              className={cn(
+                "w-full justify-between min-h-[48px] p-4 font-medium text-left bg-secondary rounded-xl transition-all duration-200 touch-manipulation",
+                level === 0 && "text-base",
+                level > 0 && "text-sm pl-8"
+              )}
+            >
+              <span className="text-slate-700">{item.title}</span>
+              <ChevronRight
+                className={cn(
+                  "h-4 w-4 shrink-0 text-slate-500 transition-transform duration-300 ease-out",
+                  isOpen && "rotate-90"
+                )}
+              />
+            </Button>
+          </CollapsibleTrigger>
+          <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
+            <div
+              className={cn(
+                "pb-2",
+                level === 0 && "pl-3 border-l-2 border-slate-200 ml-4"
+              )}
+            >
+              <div>
+                {item.children.map((child, index) => (
+                  <div className="mt-2">
+                    <MobileNavItem
+                      key={index}
+                      item={child}
+                      level={level + 1}
+                      onNavigate={onNavigate}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </CollapsibleContent>
+        </Collapsible>
+      ) : (
+        <Link href={item.href || "#"} onClick={handleLinkClick}>
           <Button
             variant="ghost"
-            size="sm"
-            onClick={() => setIsOpen(!isOpen)}
-            className="h-6 w-6 p-0"
+            className={cn(
+              "w-full justify-start min-h-[48px] py-4 px-8 font-medium text-left bg-secondary rounded-xl transition-all duration-200 touch-manipulation",
+              level === 0 && "text-base px-4",
+              level > 0 && "text-sm px-3"
+            )}
           >
-            <Plus
-              className={`h-4 w-4 transition-transform ${
-                isOpen ? "rotate-45" : ""
-              }`}
-            />
+            <span className="text-slate-700">{item.title}</span>
           </Button>
-        )}
-      </div>
-      {item.children && isOpen && (
-        <div className="pl-2 border-l border-gray-200">
-          {item.children.map((child, index) => (
-            <MobileNavItem key={index} item={child} level={level + 1} />
-          ))}
-        </div>
+        </Link>
       )}
-      {level === 0 && <Separator className="my-2" />}
+      {level === 0 && <Separator className="my-2 bg-transparent" />}
     </div>
   );
 };
@@ -150,10 +189,14 @@ const DesktopNavItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
   if (!item.children) {
     return (
       <NavigationMenuItem>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
-          <Link href={item.href || "#"}>
-            {item.title}
-          </Link>
+        <NavigationMenuLink
+          className={cn(
+            navigationMenuTriggerStyle(),
+            "hover:bg-slate-100 hover:text-blue-600"
+          )}
+          asChild
+        >
+          <Link href={item.href || "#"}>{item.title}</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
     );
@@ -161,29 +204,34 @@ const DesktopNavItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
 
   return (
     <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent text-md hover:bg-transparent">{item.title}</NavigationMenuTrigger>
-      <NavigationMenuContent className="rounded bg-white">
-        <div className="grid w-[200px] gap-2 py-2">
+      <NavigationMenuTrigger className="bg-transparent text-md hover:bg-slate-100 hover:text-blue-600 transition-colors duration-200">
+        {item.title}
+      </NavigationMenuTrigger>
+      <NavigationMenuContent className="rounded-lg bg-white shadow-lg border border-slate-200">
+        <div className="grid w-[220px] gap-1 p-3">
           {item.children.map((child, index) => (
             <div key={index}>
               {child.children ? (
                 <Popover>
                   <PopoverTrigger asChild>
-                    <Link
-                      href={child.href || "#"}
-                      className="flex w-full justify-between hover:bg-secondary p-2 hover:text-blue-900 bg-transparent font-semibold text-sm rounded text-left"
+                    <Button
+                      variant="ghost"
+                      className="w-full justify-between p-3 h-auto font-medium text-left hover:bg-slate-100 hover:text-blue-600 rounded-lg transition-all duration-200"
                     >
-                      <span>{child.title}</span>
-                      <ChevronRight className="h-4 w-4" />
-                    </Link>
+                      <span className="text-slate-700">{child.title}</span>
+                      <ChevronRight className="h-4 w-4 text-slate-400" />
+                    </Button>
                   </PopoverTrigger>
-                  <PopoverContent side="right" className="w-56 bg-secondary">
-                    <div className="space-y-2">
+                  <PopoverContent
+                    side="right"
+                    className="w-56 bg-white border border-slate-200 rounded-lg"
+                  >
+                    <div className="p-2 space-y-1">
                       {child.children.map((grandchild, gIndex) => (
                         <Link
                           key={gIndex}
                           href={grandchild.href || "#"}
-                          className="block hover:bg-secondary hover:text-blue-900 font-semibold rounded text-sm"
+                          className="block p-2 hover:bg-slate-100 hover:text-blue-600 font-medium rounded-lg text-sm transition-all duration-200"
                         >
                           {grandchild.title}
                         </Link>
@@ -194,7 +242,7 @@ const DesktopNavItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
               ) : (
                 <Link
                   href={child.href || "#"}
-                  className="block px-2 py-2 hover:bg-secondary hover:text-blue-900 font-semibold rounded text-sm"
+                  className="block p-3 hover:bg-slate-100 hover:text-blue-600 font-medium rounded-lg text-sm transition-all duration-200"
                 >
                   {child.title}
                 </Link>
@@ -210,53 +258,110 @@ const DesktopNavItem: React.FC<{ item: NavigationItem }> = ({ item }) => {
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
   return (
-    <header className="sticky h-30 top-0 z-50 w-full border-b bg-white flex items-center justify-center" style={{ marginTop: '4px' }}>
+    <header
+      className="sticky h-20 lg:h-30 top-0 z-50 w-full border-b bg-white/95 backdrop-blur-sm shadow-sm flex items-center justify-center"
+      style={{ marginTop: "4px" }}
+    >
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className="h-9 w-9 p-0">
-                  <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle menu</span>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-10 w-10 p-0 rounded-full hover:bg-slate-100 transition-colors duration-200"
+                >
+                  <Menu className="h-5 w-5 text-slate-700" />
+                  <span className="sr-only">Toggle navigation menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-72 overflow-y-auto">
-                <div className="flex items-center justify-between mb-6">
-                  <Image
-                    src="/logo.svg"
-                    alt="School Logo"
-                    width={120}
-                    height={48}
-                    className="h-12 w-auto"
-                  />
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="h-9 w-9 p-0"
-                  >
-                    <X className="h-5 w-5" />
-                  </Button>
+              <SheetContent
+                side="left"
+                className="w-80 p-0 bg-white/98 backdrop-blur-sm border-r border-slate-200 shadow-xl"
+              >
+                <SheetHeader className="p-6 pb-4 border-b border-slate-200 bg-gradient-to-r from-blue-50 to-slate-50">
+                  <SheetTitle className="text-left">
+                    <div className="flex items-center space-x-3">
+                      <div className="p-2 bg-white rounded-lg shadow-sm border border-slate-200">
+                        <Image
+                          src="/xlog.png"
+                          alt="School Logo"
+                          width={4000}
+                          height={4000}
+                          className="h-10 w-auto"
+                        />
+                      </div>
+                      {/* <div>
+                        <h2 className="text-lg font-semibold text-slate-800">Navigation</h2>
+                        <p className="text-sm text-slate-500">Explore our school</p>
+                      </div> */}
+                    </div>
+                  </SheetTitle>
+                </SheetHeader>
+
+                {/* Home Button */}
+                <div className="px-2 bg-slate-50/50">
+                  <Link href="/" onClick={closeMobileMenu}>
+                    <Button
+                      variant="ghost"
+                      className="w-full justify-start font-medium text-left hover:bg-blue-50 active:bg-blue-100 hover:text-blue-600 rounded-xl transition-all duration-200 touch-manipulation"
+                    >
+                      <div className="p-1.5 bg-blue-100 rounded-lg mr-3">
+                        <Home className="h-4 w-4 text-blue-600" />
+                      </div>
+                      <span className="text-slate-700 font-semibold">Home</span>
+                    </Button>
+                  </Link>
                 </div>
-                <div className="space-y-2">
+
+                <div className="flex-1 overflow-y-auto px-4">
                   {[...navigationData, ...rightNavigationData].map(
                     (item, index) => (
-                      <MobileNavItem key={index} item={item} />
+                      <MobileNavItem
+                        key={index}
+                        item={item}
+                        onNavigate={closeMobileMenu}
+                      />
                     )
                   )}
+                </div>
+
+                {/* Footer */}
+                <div className="p-6 border-t border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
+                  <div className="text-center space-y-2">
+                    <p className="text-xs text-slate-600 font-medium">
+                      Jammu Kashmir Police Public School
+                    </p>
+                    <p className="text-xs text-slate-500">
+                      © 2024 All rights reserved
+                    </p>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
           </div>
 
-          {/* Desktop Logo (Center) and Mobile Logo (After menu button) */}
+          {/* Mobile Logo (visible on mobile) */}
+          <div className="lg:hidden flex-1 flex justify-center">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/xlog.png"
+                alt="School Logo"
+                width={12000}
+                height={6000}
+                className="h-10 w-auto"
+              />
+            </Link>
+          </div>
 
-          {/* Desktop Navigation - Left Side */}
-          <div className="hidden md:flex md:flex-1 md:justify-center md:items-center">
-            <div className="md:flex bg-transparent">
+          {/* Desktop Logo (Center) and Navigation */}
+          <div className="hidden lg:flex lg:flex-1 lg:justify-center lg:items-center">
+            <div className="lg:flex bg-transparent">
               <NavigationMenu>
                 <NavigationMenuList className="space-x-0">
                   {navigationData.map((item, index) => (
@@ -270,15 +375,15 @@ export function Header() {
                 <Image
                   src="/xlog.png"
                   alt="School Logo"
-                  width={666}
-                  height={375}
-                  className="h-auto w-auto min-h-70"
+                  width={12000}
+                  height={6000}
+                  className="h-auto w-auto min-h-20"
                 />
               </Link>
             </div>
 
             {/* Desktop Navigation - Right Side */}
-            <div className="md:flex">
+            <div className="lg:flex">
               <NavigationMenu>
                 <NavigationMenuList className="space-x-0">
                   {rightNavigationData.map((item, index) => (
@@ -289,8 +394,10 @@ export function Header() {
             </div>
           </div>
 
-          {/* Mobile Spacer */}
-          <div className="md:hidden w-9"></div>
+          {/* Mobile Right Space (for visual balance) */}
+          <div className="lg:hidden w-10 flex justify-end">
+            {/* You can add additional mobile actions here like search, profile, etc. */}
+          </div>
         </div>
       </div>
     </header>

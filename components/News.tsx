@@ -15,13 +15,14 @@ interface NewsItem {
   image: string;
   excerpt: string;
   content: string;
+  imageGallery?: string[];
 }
 
 interface NewsProps {
   limit?: number;
 }
 
-export default function News({ limit }: NewsProps) {
+export default function News({ limit = 6 }: NewsProps) {
   const [newsData, setNewsData] = useState<NewsItem[]>([]);
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
 
@@ -57,7 +58,7 @@ export default function News({ limit }: NewsProps) {
             <h2 className="text-4xl font-bold text-gray-900">News & Updates</h2>
           </div>
           <Link
-            href="/news"
+            href="/events/news"
             className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-900 text-gray-900 font-semibold rounded-lg hover:bg-gray-900 hover:text-white transition-colors duration-300"
           >
             View All News
@@ -68,17 +69,17 @@ export default function News({ limit }: NewsProps) {
         {/* News Grid */}
         <div className="grid grid-cols-1 bg-white md:grid-cols-2 lg:grid-cols-3 gap-8">
           {newsData.map((item, index) => (
-            <article
-              key={item.id}
-              className={`group bg-white rounded-xl overflow-hidden transition-all duration-300`}
-              onMouseEnter={() => setHoveredItem(item.id)}
-              onMouseLeave={() => setHoveredItem(null)}
-            >
-              {/* Image */}
-              <div
-                className="relative h-80 bg-cover bg-center duration-300 grayscale-100 hover:grayscale-0 transition-all"
-                style={{ backgroundImage: `url(${item.image})` }}
+            <Link key={item.id} href={`/events/news/${item.id}`}>
+              <article
+                className={`group bg-white rounded-xl overflow-hidden transition-all duration-300 cursor-pointer hover:shadow-lg`}
+                onMouseEnter={() => setHoveredItem(item.id)}
+                onMouseLeave={() => setHoveredItem(null)}
               >
+                {/* Image */}
+                <div
+                  className="relative h-80 bg-cover bg-center duration-300 grayscale-100 hover:grayscale-0 transition-all"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
                 {/* Author Info */}
@@ -142,7 +143,8 @@ export default function News({ limit }: NewsProps) {
               </div>
 
               {/* Content */}
-            </article>
+              </article>
+            </Link>
           ))}
         </div>
       </div>

@@ -214,7 +214,7 @@ export default function AwardsPage() {
           onClick={() => setSelectedAward(null)}
         >
           <div 
-            className="relative max-w-4xl w-full max-h-[90vh] bg-card rounded-lg shadow-lg border overflow-hidden"
+            className="relative max-w-4xl w-full overflow-y-auto max-h-[90vh] bg-card rounded-xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
@@ -258,7 +258,7 @@ export default function AwardsPage() {
             </div>
 
             {/* Modal Content */}
-            <div className="max-h-96 overflow-y-auto p-6">
+            <div className=" p-6">
               <div className="prose prose-sm max-w-none">
                 <ReactMarkdown 
                   remarkPlugins={[remarkGfm]}

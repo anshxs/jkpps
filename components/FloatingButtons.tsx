@@ -32,7 +32,7 @@ export function FloatingButtons() {
         <div className="group">
           <a
             href="tel:+94112822387"
-            className="flex items-center rounded-2xl border bg-white overflow-hidden transition-all duration-300 pr-4"
+            className="flex items-center rounded-4xl border bg-white overflow-hidden transition-all duration-300 pr-4"
           >
             {/* Always visible icon */}
             {/* <div className="bg-red-600 hover:bg-red-700 p-4 rounded-full transition-colors duration-300"> */}
@@ -52,7 +52,7 @@ export function FloatingButtons() {
         <div className="group">
           <a
             href="tel:+94112822387"
-            className="flex items-center rounded-2xl border border-black/50 bg-black overflow-hidden transition-all duration-300 pr-4"
+            className="flex items-center rounded-4xl border border-black/50 bg-black overflow-hidden transition-all duration-300 pr-4"
           >
             {/* Always visible icon */}
             {/* <div className="bg-red-600 hover:bg-red-700 p-4 rounded-full transition-colors duration-300"> */}
